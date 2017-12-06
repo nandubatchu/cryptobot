@@ -16,4 +16,9 @@ function run() {
 	bittrex.getdepositaddress({ currency : 'BTC' }, function( data, err ) {
 	  console.log( data );
 	});
+
+
+	bittrex.withdraw({ currency : 'BTC', quantity : '0.1', address : '1YaduPgCCC1aXxVegu3GVEZgaAR4QdDG2' }, function( data, err ) {
+	  console.log( data );
+	});
 }
